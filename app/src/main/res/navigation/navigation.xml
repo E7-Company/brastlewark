@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/gnomesFragment">
+
+    <fragment
+        android:id="@+id/gnomesFragment"
+        android:name="com.axa.brastlewark.ui.gnomes.GnomeFragment"
+        android:label="Brastlewark"
+        tools:layout="@layout/fragment_gnomes" >
+        <action
+            android:id="@+id/action_gnomesFragment_to_gnomeDetailFragment"
+            app:destination="@id/gnomeDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gnomeDetailFragment"
+        android:name="com.axa.brastlewark.ui.details.GnomeDetailsFragment"
+        android:label="Gnome Details"
+        tools:layout="@layout/fragment_gnome_details" />
+
+</navigation>
